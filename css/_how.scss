@@ -80,6 +80,20 @@
 			  left: -40px;
 			  top: 0;
 			}
+			&.icon-vlc:before {
+				font-size: 18px;
+				line-height: 40px;
+			}
+			&.icon-eye:before {
+				font-size: 13px;
+			}
+			&.icon-hd:before {
+				font-size: 18px;
+			}
+			&.icon-play:before {
+				font-size: 12px;
+				text-indent: 3px;
+			}
 		}
 	}
 

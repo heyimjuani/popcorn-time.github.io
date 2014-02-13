@@ -31,7 +31,7 @@
 				margin-left: 10px;
 
 				+ :not(.social) {
-					margin-left: 20px;
+					margin-left: 50px;
 				}
 			}
 			&.download {
@@ -70,10 +70,21 @@
 				color: #fff;
 				text-indent: 12px;
 				background: #0072bc;
+				-webkit-transition: background ease .2s;
+				-moz-transition: background ease .2s;
+				transition: background ease .2s;
+
+				&:hover {
+					background: darken(#0072bc, 7%);
+				}
 			}
 			&.icon-twitter {
 				text-indent: 5px;
 				background: #00bff3;
+
+				&:hover {
+					background: darken(#00bff3, 7%);
+				}
 			}
 			&.icon-facebook:before, &.icon-twitter:before {
 				display: block;
@@ -95,26 +106,24 @@
 			font-size: 12px;
 			font-style: italic;
 		}
+	}
 
+	hr {
+		border: none;
+		border-top: 1px solid #a2a2a2;
+	}
 
+	hr + i {
+		display: block;
+		width: 40px;
+		height: 20px;
+		background: url(../images/footer-film.png) no-repeat;
+		margin: -18px auto 0;
 	}
 
 	footer {
 		text-align: center;
 		font-size: 14px;
-
-		hr {
-			border: none;
-			border-top: 1px solid #a2a2a2;
-		}
-
-		hr + i {
-			display: block;
-			width: 40px;
-			height: 20px;
-			background: url(../images/footer-film.png) no-repeat;
-			margin: -18px auto 0;
-		}
 
 		p {
 			padding: 20px 0;
